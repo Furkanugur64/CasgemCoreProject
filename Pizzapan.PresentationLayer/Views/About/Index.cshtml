@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @await Component.InvokeAsync("_HeadPartial")
+</head>
+
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("_NavbarPartial")
+    <!--/header-->
+    <!-- Domain Modal -->
+    @await Component.InvokeAsync("_ContactPartial")
+    <!-- //Domain modal -->
+    @await Component.InvokeAsync("_WhoAreWePartial")
+    <!--  //Intro video popup section -->
+    <!--  form-12 -->
+    @await Component.InvokeAsync("_ServicesPartial")
+    <!-- // form-12 -->
+    <!-- team -->
+    @await Component.InvokeAsync("_OurTeamPartial")
+    <!-- //team -->
+    <!-- stats -->
+    @await Component.InvokeAsync("_StatisticPartial")
+    <!-- //stats -->
+    <!-- footers 20 -->
+    @await Component.InvokeAsync("_FooterPartial")
+    <!-- move top -->
+    @await Component.InvokeAsync("_ScriptPartial")
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+﻿@model List<Pizzapan.EntityLayer.Concrete.Coupon>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+    string color = "" ;
+}
+
+<h1>Kupon Listesi</h1>
+
+
+
+<table class="table table-bordered">
+    <tr style="background-color:brown; color:white">
+        <th>#</th>
+        <th>Kupon Adı</th>
+        <th>Tarih</th>
+        <th>Bitiş Tarihi</th>
+        <th>Kupon Adeti</th>      
+    </tr>
+    @foreach (var item in Model)
+    {  
+        if (item.CouponFinishDate < DateTime.Now)
+        {
+            color = "#ff6666";
+        }
+        else
+        {
+            color = "#00b300";
+        }
+
+    count++;
+        <tr style="background-color:@color">            
+            <td>@count</td>
+            <td>@item.CouponName</td>
+            <td>@Convert.ToDateTime(@item.CouponDate).ToString("dd/MM/yyyy")</td>
+            <td>@Convert.ToDateTime(@item.CouponFinishDate).ToString("dd/MM/yyyy")</td>
+            <td>@item.CouponCount</td>            
+        </tr>
+    }
+</table>
+<td> <a href="/Coupon/AddCoupon/" class="btn btn-info">Yeni Kupon</a></td>
+

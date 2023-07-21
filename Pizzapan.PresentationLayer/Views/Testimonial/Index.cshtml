@@ -1,0 +1,35 @@
+﻿@model List<Pizzapan.EntityLayer.Concrete.Testimonial>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h1>Referans Listesi</h1>
+
+
+
+<table class="table table-bordered">
+    <tr style="background-color:brown; color:white">
+        <th>#</th>
+        <th>Müşteri Adı</th>
+        <th>Ünvan</th>
+        <th>Yorum</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.CustomerName</td>
+            <td>@item.CustomerTitle</td>
+            <td>@item.Comment</td>
+            <td> <a href="/Testimonial/TestimonialDelete/@item.TestimonialID" class="btn btn-danger">Sil</a></td>
+            <td> <a href="/Testimonial/TestimonialDetails/@item.TestimonialID" class="btn btn-warning">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
+<td> <a href="/Testimonial/AddTestimonial/" class="btn btn-success">Ekle</a></td>

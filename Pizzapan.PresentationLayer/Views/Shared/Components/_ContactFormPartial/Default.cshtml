@@ -1,0 +1,79 @@
+﻿
+@{
+    Layout = null;
+}
+
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="#url">Ana Sayfa</a></li>
+            <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> İletişim</li>
+        </ul>
+    </div>
+</section>
+<section class="w3l-contact-11 py-5">
+    <div class="contacts-main py-lg-5 py-md-4">
+        <div class="contant11-top-bg">
+            <div class="container">
+                <div class="title-content text-center">
+                    <h6 class="sub-title">İletişim</h6>
+                    <h3 class="title-big">Bize Ulaşın</h3>
+                </div>
+                <div class="d-grid contact section-gap mt-lg-5 mt-4">
+                    <div class="contact-info-left d-grid text-center">
+                        <div class="contact-info">
+                            <span class="fa fa-map-marker" aria-hidden="true"></span>
+                            <h4>Adres</h4>
+                            <p>Ankara - Kızılay</p>
+                        </div>
+                        <div class="contact-info">
+                            <span class="fa fa-phone" aria-hidden="true"></span>
+                            <h4>İletişim</h4>
+                            <p><a href="tel:+1-2345-678-11">+90-507-099-41-61</a></p>
+                            <p><a href="mailto:pizza@order.com" class="email">pizzapan@gmail.com</a></p>
+                        </div>
+                        <div class="contact-info">
+                            <span class="fa fa-clock-o" aria-hidden="true"></span>
+                            <h4>Çalışma Saatleri</h4>
+                            <p>Pazartesi - Pazar</p>
+                            <p> 09:00 - 24:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-41-mian section-gap mt-5">
+            <div class="container">
+                <div class="d-grid align-form-map">
+                    <div class="form-inner-cont">
+                        <form action="/Contact/AddMessage/" method="post" class="signin-form">
+                            <div class="form-input">
+                                <label for="Name">Adınız</label>
+                                <input type="text" name="Name" id="w3lName" required="" />
+                            </div>
+                            <div class="form-input">
+                                <label for="Email">Email</label>
+                                <input type="email" name="Email" id="w3lSender" required="" />
+                            </div>
+                            <div class="form-input">
+                                <label for="Subject">Konu</label>
+                                <input type="text" name="Subject" id="w3lName" required="" />
+                            </div>                         
+                            <div class="form-input">
+                                <label for="Message">Mesajınız</label>
+                                <textarea placeholder="" name="Message" id="w3lMessage" required=""></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-style btn-primary">Gönder</button>
+
+                        </form>
+                    </div>
+                    <div class="map">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99683.76025247523!2d29.33616001036007!3d38.66916741580691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c87fd9700e8031%3A0xe9e1c5b72df9bba3!2zVcWfYWssIFXFn2FrIE1lcmtlei9VxZ9haw!5e0!3m2!1str!2str!4v1689942264691!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- footers 20 -->

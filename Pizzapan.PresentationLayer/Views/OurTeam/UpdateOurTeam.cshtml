@@ -1,0 +1,30 @@
+﻿@model OurTeam
+@{
+    Layout = null;
+}
+
+<h1>Yeni Takım Ekleme Sayfası</h1>
+
+
+<form method="post">
+    <input type="hidden" asp-for="OurTeamID"/>
+    <label>Adınız</label>
+    <input type="text" class="form-control border" asp-for="Name" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
+    <label>Soyadınız</label>
+    <input type="text" class="form-control border" asp-for="Surname" />
+    <span asp-validation-for="Surname" class="text-danger"></span>
+    <br />
+    <label>Başlık</label>
+    <input type="text" class="form-control border" asp-for="Title" />
+    <span asp-validation-for="Title" class="text-danger"></span>
+    <br />
+    <label>Görsel</label>
+    <input type="text" class="form-control border" asp-for="ImageUrl" />
+    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    <br />
+
+    <button class="btn btn-warning">Güncelle</button>
+
+</form>

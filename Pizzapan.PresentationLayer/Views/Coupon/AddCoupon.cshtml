@@ -1,0 +1,21 @@
+﻿@model Pizzapan.EntityLayer.Concrete.Coupon
+
+@{
+    ViewData["Title"] = "AddCoupon";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Kupon Ekleme Sayfası</h1>
+
+
+<form method="post">
+    <label>Kupon Adı</label>
+    <input asp-for="CouponName" class="form-control border" readonly value="@ViewBag.Coupon" style="color:black !important" />
+    <br />    
+    <label>Adet</label>
+    <input asp-for="CouponCount" class="form-control border" style="color:black !important" />
+    <br />   
+    <button class="btn btn-info">Kaydet</button>
+</form>
+
+

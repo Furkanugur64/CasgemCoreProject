@@ -1,0 +1,109 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+
+
+@*<form method="post">
+						<br />
+						<div class="container">
+							<label>Kullanıcı Adı</label>
+							<input type="text" value="@TempData["Username"]" name="Username" class="form-control" readonly />
+							<br />
+							<label>Doğrulama Kodu</label>
+							<input type="text" name="ConfirmCode" class="form-control" />
+							<br />
+							<button type="submit" class="btn btn-primary">Doğrula</button>
+						</div>
+</form>*@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V15</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="/confirm/images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/confirm/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/confirm/css/main.css">
+	<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(/confirm/images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Email Onaylama Sayfası
+					</span>
+				</div>
+
+				<form method="post" class="login100-form validate-form">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" value="@TempData["Username"]" name="UserName" placeholder="Kullanıcı Adı">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="text" name="ConfirmCode" placeholder="Doğrulama Kodu">
+						<span class="focus-input100"></span>
+					</div>
+
+					
+
+					<div class="container-login100-form-btn">
+						<a href="/Login/Index/" class="login100-form-btn" style="margin-right:30px">
+							İptal
+						</a>
+
+						<button class="login100-form-btn">
+							Onayla
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--===============================================================================================-->
+	<script src="/confirm/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="/confirm/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="/confirm/vendor/bootstrap/js/popper.js"></script>
+	<script src="/confirm/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="/confirm/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="/confirm/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/confirm/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="/confirm/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="/confirm/js/main.js"></script>
+
+</body>
+</html>

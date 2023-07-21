@@ -1,0 +1,36 @@
+﻿@model List<OurTeam>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h1>Çalışan Listesi</h1>
+
+
+<table class="table table-bordered">
+    <tr style="background-color:brown; color:white">
+        <th>#</th>
+        <th>Adı</th>
+        <th>Soyadı</th>
+        <th>Başlık</th>
+        <th>Resim</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.Title</td>
+            <td><img width="150" src="@item.ImageUrl"></td>
+            <td> <a href="/OurTeam/DeleteOurTeam/@item.OurTeamID" class="btn btn-danger">Sil</a></td>
+            <td> <a href="/OurTeam/UpdateOurTeam/@item.OurTeamID" class="btn btn-warning">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<td> <a href="/OurTeam/AddOurTeam/" class="btn btn-info">Yeni Çalışan</a></td>
+

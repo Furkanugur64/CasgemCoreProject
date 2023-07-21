@@ -1,0 +1,27 @@
+﻿@model Pizzapan.EntityLayer.Concrete.Contact
+
+@{
+    ViewData["Title"] = "MessageDetailsContact";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Mesaj Detay Sayfası</h1>
+
+
+<label>Müşteri Adı</label>
+<input asp-for="Name" class="form-control border" style="color:black !important" />
+<br />
+<label>Konu</label>
+<input asp-for="Subject" class="form-control border" style="color:black !important" />
+<br />
+<label>Tarih</label>
+<input asp-for="SendDateMessage" class="form-control border" style="color:black !important" />
+<br />
+<label>Email Adresi</label>
+<input asp-for="Email" class="form-control border" style="color:black !important" />
+<br />
+<label>Mesaj</label>
+<textarea asp-for="Message" class="form-control border" type="" style="color:black !important"></textarea>
+<br />
+
+<button class="btn btn-info">Kaydet</button>

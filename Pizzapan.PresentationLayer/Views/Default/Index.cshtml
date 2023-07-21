@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!doctype html>
+<html lang="en">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("_NavbarPartial")
+    <!-- Domain Modal -->
+    @await Component.InvokeAsync("_ContactPartial")
+    <!-- //Domain modal -->
+    @await Component.InvokeAsync("_FeaturePartial")
+
+    @await Component.InvokeAsync("_CampaignPartial")
+
+    @await Component.InvokeAsync("_PizzaGalleryPartial")
+
+     @await Component.InvokeAsync("_ProductPartial")
+
+    <!--/testimonials-->
+    @await Component.InvokeAsync("_TestimonialPartial")
+    <!--//testimonials-->
+    <!-- footers 20 -->
+    @await Component.InvokeAsync("_FooterPartial")
+    <!-- move top -->
+    @await Component.InvokeAsync("_ScriptPartial")
+
+</body>
+
+</html>
