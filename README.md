@@ -6,7 +6,7 @@ Projemiz Katmanlı Mimari , Repository Design Pattern ve Asp.Net Core Identity k
 
  ## Proje içi Görseller 
  ------------
-## Giriş Ekranı
+## Açılış Ekranı
 ![](https://i.hizliresim.com/rgvupsd.png)
 ------------
 
@@ -30,6 +30,12 @@ Projemiz Katmanlı Mimari , Repository Design Pattern ve Asp.Net Core Identity k
 ------------
 ## Email Onay Kodu
 ![](https://i.hizliresim.com/bgtjf6o.png)
+------------
+## Kayıt Olma Sayfası
+![](https://i.hizliresim.com/i76vv7z.png)
+------------
+## Giriş Sayfası
+![](https://i.hizliresim.com/akuh5q8.png)
 ------------
 
 
